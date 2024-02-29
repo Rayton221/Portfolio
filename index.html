@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div id="navigation">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+              <span  class=sides onclick="closemenu()">&#10006</span>
+            </ul>
+            <span class="sides" onclick="openmenu()">&#9776</span>
+
+        </nav>
+    </div>
+
+    <div id="header">
+        <div class="container">
+
+           <div class="header-text" onclick="openmenu()">
+                <p>STATISTICIAN</p>
+                <h1> Hi I'm <span>Rayton</span><br> Kabila from Kenya</h1>
+            </div>
+
+        </div>
+    </div>
+    
+    <!------------------This section belongs to about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-first-column">
+                    <img src="pics and cv/me.jpg">
+                </div>
+                <div class="about-second-column">
+                    <h1 id="sub-title">About Me</h1>
+                    <p>I am a hardworking and a passionate Junior Data Analyst highly interested in Data Science, currently based in Nairobi, Kenya.
+                        I have a good experience in data analysis having worked on several projects in Kenya including Hackathons.I have extensively worked with R for three years,
+                        and with python for two years.I enjoy learning new things each day, and I am always ready to take up new challenges as they arise.<br>
+                        I am very passionate about using data analytics to derive meaningful insights which can be used for development both in Africa and beyond.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Competencies')">Competencies</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Competencies">
+                        <ul>
+                            <li><span>Statistical softwares:</span><br>R, SPSS</li>
+                            <li><span>Programming:</span><br>Python, C++</li>
+                            <li><span>Databases:</span><br>MySQL</li>
+                            <li><span>Data visualization/Reporting:</span><br>R Markdown, Jupyter notebook, R Shiny, Power BI</li>
+                            <li><span>Operating Systems:</span><br>Mac OS, Windows, Linux</li>
+                            <li><span>Survey Programming:</span><br>ODK</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>May 2023 – August 2023: </span><br>Attachment at Kenya National Bureau of Statistics (KNBS).<br>
+                            Roles:<br>
+                            1. Development of questionnaires on mobile application.<br>
+                            2. Data collection via mobile application (ODK, SurveyCTO).<br>
+                            3. Interviews with household sample populations.<br>
+                            4. Data analysis using Excel, SPSS, R.
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021 to date:</span><br>Bsc. Statistics - Jomo Kenyatta University Of Agriculure And Technology (JKUAT), Kenya.</li>
+                            <li><span>2022 JAN - April:</span><br>Data Science training - Bounty Analytica, Kenya.</li>
+                            <li><span>2017 - 2020:</span><br>Ramba Boys Secondary School (KSCE), Kenya.</li>
+                            <li><span>2008 - 2016:</span><br>Dr Williams Baptist Primary School (KCPE), Kenya.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------This section belongs to Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Data Collection</h2>
+                    <p>The process of gathering and analyzing accurate data from various sources to find answers to research problems, trends and probabilities, etc., to evaluate possible outcomes.</p>
+                    <a href="https://www.simplilearn.com/what-is-data-collection-article">Learn more</a>
+                </div>
+                <div>
+                    <h2>Data Analysis</h2>
+                    <p>The process of systematically applying statistical and/or logical techniques to describe and illustrate, condense and recap, and evaluate data.</p>
+                    <a href="https://www.simplilearn.com/data-analysis-methods-process-types-article">Learn more</a>
+                </div>
+                <div>
+                    <h2>Statistical Modelling</h2>
+                    <p>Statistical modeling is an elaborate method of generating sample data and making real-world predictions using numerous statistical models and explicit assumptions.</p>
+                    <a href="https://www.simplilearn.com/tutorials/statistics-tutorial/what-is-statistical-modeling">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------This section belongs to Portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pics and cv/rocr.png">
+                    <div class="layer">
+                        <h3>ROCR curve</h3>
+                        <p>This curve helps choose the best threshold while performing logistic regression (Supervised Machine Learning).</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pics and cv/box.png">
+                    <div class="layer">
+                        <h3>Boxplot</h3>
+                        <p>This plot is used to compare the distribution of numerical values with respect to categorical variables (Data visualization).</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pics and cv/line.png">
+                    <div class="layer">
+                        <h3>Line Graph</h3>
+                        <p>This plot is used to plot numerical variables.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!---------This section belongs to contact--------->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Email : kabilarayton221@gmail.com</p>
+                    <p>Phone : +254748226843</p>
+                    <a href="pics and cv/My CV.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Youe Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright &#169 Rayton</p>
+        </div>
+    </div>
+
+    <!------------This section consist of Javascript codes------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
