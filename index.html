@@ -122,21 +122,21 @@
                     <img src="pics and cv/rocr.png">
                     <div class="layer">
                         <h3>ROCR curve</h3>
-                        <p>This curve helps choose the best threshold while performing logistic regression (Supervised Machine Learning).</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum porro aut eos dignissimos necessitatibus molestiae beatae laudantium culpa in qui nostrum voluptatum sit ea ratione natus atque, est saepe.</p>
                     </div>
                 </div>
                 <div class="work">
                     <img src="pics and cv/box.png">
                     <div class="layer">
                         <h3>Boxplot</h3>
-                        <p>This plot is used to compare the distribution of numerical values with respect to categorical variables (Data visualization).</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, delectus repellendus molestiae adipisci dolor incidunt numquam consectetur recusandae quis natus magni est ad laborum nam praesentium. Impedit illo sit quos.</p>
                     </div>
                 </div>
                 <div class="work">
                     <img src="pics and cv/line.png">
                     <div class="layer">
                         <h3>Line Graph</h3>
-                        <p>This plot is used to plot numerical variables.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt facere, sunt tempora odio fuga a placeat, voluptates dolor accusantium ad delectus nam libero magnam obcaecati? Consequatur aliquam eveniet laborum nihil!</p>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
     <!---------This section belongs to contact--------->
     <div id="contacts">
         <div class="container">
-            <div class="row">
+            <div class="row"> 
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p>Email : kabilarayton221@gmail.com</p>
@@ -155,7 +155,7 @@
                     <a href="pics and cv/My CV.docx" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your name" required>
                         <input type="text" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Youe Message"></textarea>
@@ -196,5 +196,24 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzGxW3KbSwhG-bYPzqMcblvtgLT8wQoqZRfrWGVWrlfQfB_dSqd9hYwiShV9bZ5ADvsVw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML ="" 
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
