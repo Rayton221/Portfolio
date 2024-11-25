@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/fff11c7584.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="container">
+       <nav>
+        <div class="logo"><span class="R">R</span>ayton.</div>
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contacts</a></li>   
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </nav> 
+
+       <div class="header_text">
+        <p>Statistician</p>
+        <h1>Hi, I'm <span>Rayton</span><br>Kabila From Kenya</h1>
+       </div>
+
+    </div>
+  </div>  
+
+    <!------------------This section belongs to about------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1"><img src="pics and cv/s2.png"></div> 
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a hardworking and a passionate Junior Data Analyst highly interested in Data Science, currently based in Nairobi, Kenya.
+              I have a good experience in data analysis having worked on several projects in Kenya including Hackathons.I have extensively worked with R for three years,
+              and with python for two years.I enjoy learning new things each day, and I am always ready to take up new challenges as they arise.<br>
+              I am very passionate about using data analytics to derive meaningful insights which can be used for development both in Africa and beyond.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Competencies</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Statistical softwares:</span><br>R, STATA</li>
+                    <li><span>Programming:</span><br>Python, Julia, Java, C++</li>
+                    <li><span>Databases:</span><br>MySQL</li>
+                    <li><span>Microsoft:</span><br>Excel, Word</li>
+                    <li><span>Data visualization/Reporting:</span><br>R Markdown, Jupyter notebook, R Shiny, Power BI, Tableau</li>
+                    <li><span>Operating Systems:</span><br>Mac OS, Windows, Linux</li>
+                    <li><span>Data Collection:</span><br>Commcare, Kobo, REDCap</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>April 2024 – September 2024: </span><br>Attachment at Adaptive Model for Research and Empowerment in Communities (<a href="https://amrecafrica.org/" class="institution">AMREC</a>).<br>
+                    Roles:<br>
+                    1. Development of questionnaires using CommCare and Kobo.<br>
+                    2. Data collection via mobile application (CommCare and Kobo).<br>
+                    3. Conducting interviews.<br>
+                    4. Data analysis using Python, SPSS, Stata and R.<br>
+                    5. Geospatial modelling using QGIS.<br>
+                    6. Qualitative data analysis using deedose and NVivo.<br>
+                  </li>
+                  <li><span>April 2023 – September 2023: </span><br>Attachment at Kenya National Bureau of Statistics (<a href="https://www.knbs.or.ke/" class="institution">KNBS</a>).<br>
+                    Roles:<br>
+                    1. Development of questionnaires on mobile application.<br>
+                    2. Data collection via mobile application (ODK, SurveyCTO).<br>
+                    3. Interviews with household sample populations.<br>
+                    4. Data analysis using Excel, SPSS, R.
+                  </li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>2021 to date:</span><br>Bsc. Statistics - Jomo Kenyatta University Of Agriculure And Technology (JKUAT), Kenya.</li>
+                      <li><span>2022 JAN - April:</span><br>Data Science training - Bounty Analytica, Kenya.</li>
+                      <li><span>2017 - 2020:</span><br>Ramba Boys Secondary School (KCSE), Kenya.</li>
+                      <li><span>2008 - 2016:</span><br>Dr Williams Baptist Primary School (KCPE), Kenya.</li>
+                    </ul>
+                  </div>
+                </div> 
+           </div>
+      </div>
+  </div>
+
+    <!---------------This section belongs to Services------------------>
+    <div id="services">
+      <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+              <div>
+                  <h2>Data Collection</h2>
+                  <p>Experienced in collecting data, both qualitative and quantitative. I have a vast experience
+                       in conducting different forms interviews.</p>
+                  <a href="https://www.surveycto.com/resources/guides/data-collection-methods-guide/">Learn more</a>
+              </div>
+              <div>
+                  <h2>Satistical Data Analysis</h2>
+                  <p>I have robust data analysis skills.
+                      I am an highly experienced data analyst with critical data driven problem solving skills, having worked on different real world
+                      projects I can efficiently analyse any data and draw meaningful insights that can inform useful decisions
+                      using different softwares such as R, Python, STATA and Excel.
+                  </p>
+                  <a href="https://www.simplilearn.com/data-analysis-methods-process-types-article">Learn more</a>
+              </div>
+              <div>
+                  <h2>Machine Learning</h2>
+                  <p>I have a vast experience and knowledge in machine learning from different fields including kaggle competitions.
+                      I have a good mastery of modern machine learning methods both supervised and unsupervised methods and can apply them in solving different problems
+                  </p>
+                  <a href="https://www.ibm.com/topics/machine-learning">Learn more</a>
+              </div>
+              <div>
+                  <h2>Statistical Programming</h2>
+                  <p>Having a statistics background and having gained unbeatable programming skills, I am a perfect statistical programmer capable of applying different modelling techniques to
+                      unearth insights from data.
+                  </p>
+                  <a href="https://bestaccreditedcolleges.org/articles/what-does-a-statistical-programmer-do-job-description-salary.html">Learn more</a>
+              </div>
+              <div>
+                  <h2>Data Visualization</h2>
+                  <p>I am perfect in visualizing data using different statistical softwares such as R and Python.<br>
+                      For dashboards, I build professional dashboards using Microsoft Tableau, Microsoft Power BI and R shiny that can be used to track changes in different sectors.
+                  </p>
+                  <a href="https://www.tableau.com/dashboard/what-is-dashboard">Learn more</a>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+
+    <!-----------This section belongs to Portfolio----------->      
+    <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="pics and cv/excel.png">
+                  <div class="layer">
+                      <h3>Excel Dashboard</h3>
+                      <p>Excel dashboard showing accident KPI's in a country within the period 2020-2021</p>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="pics and cv/tableau.png">
+                  <div class="layer">
+                      <h3>Tableau Dashboard</h3>
+                      <p>Microsoft Tableau Dashboard for New York City bicycle riders for the period period  between 2013 and 2017 includde.</p>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="pics and cv/powerBi.png">
+                  <div class="layer">
+                      <h3>Power BI Dashboard</h3>
+                      <p>Dashboard that I created using Microsoft Power BI to help identify different aspects including days in which most accidents occured, accidents per month within the perion 2021-2022 and time of the day when most accidents occur whether day or night.</p>
+                  </div>
+              </div>
+              <div class="work">
+                <img src="pics and cv/goat.png">
+                <div class="layer">
+                    <h3>Goat farming model</h3>
+                    <p>Goat farming model in python that helps a farmer know after how long they will have certain number of goats in their farm.<br>
+                    This can help the farmer plan earlier enough with the facilities in his farm to avoid inconveniences</p>
+                </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+      </div>
+  </div>
+
+    <!---------This section belongs to contact--------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class=""sub-title>Contact Me</h1>
+        <p><i class="fa-regular fa-envelope"></i> kabilarayton221@gmail.com@gmail.com</p>
+        <p> <i class="fa-solid fa-phone"></i>+254 748226843</p>
+        <div class="social-icons">
+          <a href="https://github.com/Rayton221" style="color: white;"><i class="fa-brands fa-github"></i></a>
+          <a href="https://web.facebook.com/profile.php?id=100087042803177" style="color: blue;"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/KabilaRay" style="color: white;"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://linkedin.com/in/rayton-kabila-806b98325/" style="color: blue;"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="pics and cv/My CV.docx" download class="btn btn2">Download CV</a>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="text" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+      </form>
+      <span id="msg"></span>     
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright &copy; Rayton 2024
+  </div>
+</div>
+
+  
+  <script>
+    let tablinks = document.getElementsByClassName("tab-links");
+     let tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script> 
+
+  <script>
+    let sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemen.style.right= "0";
+    }
+    function closemenu(){
+      sidemen.style.right= "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbxe1OzLUT3OtRoiHYSLsFDP9y-OK_CbRfNNSfam7J-V4tMvpOuo-xi1dZHLmJn17YD3/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!',error.message))
+      })
+  </script>
+</body>
+</html>
