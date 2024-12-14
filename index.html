@@ -41,8 +41,8 @@
           <h1 class="sub-title">About Me</h1>
             <p>
               I am a hardworking and a passionate Junior Data Analyst highly interested in Data Science, currently based in Nairobi, Kenya.
-              I have a good experience in data analysis having worked on several projects in Kenya including Hackathons.I have extensively worked with R for three years,
-              and with python for two years.I enjoy learning new things each day, and I am always ready to take up new challenges as they arise.<br>
+              I have a good experience in data analysis having worked on several projects in Kenya including Hackathons.I have extensively worked with R for <span id="R-years"></span> years,
+              and with python for <span id="python-years"></span> years.I enjoy learning new things each day, and I am always ready to take up new challenges as they arise.<br>
               I am very passionate about using data analytics to derive meaningful insights which can be used for development both in Africa and beyond.
             </p>
             <div class="tab-titles">
@@ -257,6 +257,14 @@
         })
         .catch(error => console.error('Error!',error.message))
       })
+  </script>
+  <script>
+    const startYear = 2020
+    const currentYear = new Date().getFullYear();
+    const pythonYears = currentYear - startYear;
+    const RYears = (currentYear - startYear)+1;
+    document.getElementById('python-years').textContent = pythonYears;
+    document.getElementById('R-years').textContent = RYears;
   </script>
 </body>
 </html>
