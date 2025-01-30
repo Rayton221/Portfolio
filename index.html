@@ -209,7 +209,7 @@
     </div>
   </div>
   <div class="copyright">
-    <p>copyright &copy; Rayton 2024
+    <p>copyright &copy; <span id='current_year'></span>
   </div>
 </div>
 
@@ -265,6 +265,7 @@
     const RYears = (currentYear - startYear)+1;
     document.getElementById('python-years').textContent = pythonYears;
     document.getElementById('R-years').textContent = RYears;
+    document.gelElementById('current_year').textContent = currentYear
   </script>
 </body>
 </html>
