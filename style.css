@@ -629,8 +629,9 @@ section{
     font-weight: 600;
 }
 .port-content p{
-    font-size: .8rem;
-    margin: 5px 0 15px 0;;
+    font-size: 1rem;
+    margin: 5px 0 15px 0;
+    color: black;
 }
 .port-content a{
     background: #fff;
