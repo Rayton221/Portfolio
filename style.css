@@ -627,11 +627,13 @@ section{
 .port-content h3{
     font-size: 1.5rem;
     font-weight: 600;
+    color: black;
 }
 .port-content p{
     font-size: 1rem;
     margin: 5px 0 15px 0;
     color: black;
+    font-weight: 500;
 }
 .port-content a{
     background: #fff;
