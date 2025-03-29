@@ -20,7 +20,11 @@ circles.forEach(elem=>{
 
 
 //Mix it up portfolio section///////////////////
-var mixer = mixitup('.portfolio-gallery');
+var mixer = mixitup('.portfolio-gallery', {
+    load: {
+        filter: '.recent'
+    }
+});
 
 //Circle Skills/////////////////////////////////
 let menuLi = document.querySelectorAll("header ul li a");
