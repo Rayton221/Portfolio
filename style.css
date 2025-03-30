@@ -620,6 +620,7 @@ section{
 }
 .port-box:hover .port-content{
     opacity: 1;
+    background-color: black;
 }
 .port-box:hover .port-image img{
     transform: scale(1.1);
@@ -649,7 +650,10 @@ section{
 .port-content a i{
     font-size: 1.3rem;
     color: var(--secon-bg-color);
-
+}
+.port-content a i:hover{
+    font-size: 1.3rem;
+    color: var(--secon-bg-color);
 }
 
 /* Contact section-----------------------------------*/
